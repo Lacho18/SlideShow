@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #99ff99;
+}
+
+#slide {
+    width: 50%;
+    height: 65%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+    border: 7px solid black;
+    border-radius: 12px; 
+}
+
+.slideApearence {
+    animation: slideApearence 3s ease;
+}
+
+@keyframes slideApearence {
+    0% {
+        left: -10%;
+        top: 50%;
+        width: 10%;
+        height: 15%;
+    }
+    50% {
+        left: 10%;
+        top: 45%;
+        width: 3%;
+        height: 4%;
+    }
+    100% {
+        left: 50%;
+        top: 40%;
+        width: 50%;
+        height: 65%;
+    }
+}
+
+.slideGoAway {
+    animation: slideGoAway 3s ease;
+}
+
+@keyframes slideGoAway {
+    0% {
+        left: 50%;
+        top: 40%;
+        width: 50%;
+        height: 65%;
+    }
+    50% {
+        left: 90%;
+        top: 45%;
+        width: 3%;
+        height: 4%;
+    }
+    100% {
+        left: 110%;
+        top: 50%;
+        width: 10%;
+        height: 15%;
+    }
+}
+
+#Header {
+    position: relative;
+    text-align: left;
+    font-size: 3.2vmax;
+    left: 10%;
+    margin: 7px;
+    padding: 2px;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#context {
+    position: relative;
+    top: 30%;
+    left: 5%;
+    font-size: 1.8vmax;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 4px black;
+}
+
+button > img {
+    width: 100%;
+    height: 100%;
+}
+
+.BCButtons {
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    border-radius: 15px;
+    background-color: #80bfff;
+    border: 4px solid black;
+}
+
+.buttons :hover {
+    background-color: #1a8cff;
+}
+
+#Back {
+    top: 77%;
+    left: 5%;
+}
+
+.backButtonAnimation {
+    animation: moveDownOnBack 3s ease;
+}
+
+@keyframes moveDownOnBack {
+    0% {
+        width: 3%;
+        height: 5%;
+        top: 57%;
+        left: 15%;
+    }
+    50% {
+        width: 5%;
+        height: 10%;
+        top: 80%;
+        left: 12%;
+    }
+    100% {
+        width: 10%;
+        height: 20%;
+        top: 77%;
+        left: 5%;
+    }
+}
+
+#Continue {
+    top: 77%;
+    left: 85%;
+}
+
+.continueButtonAnimation {
+    animation: moveDownOnContinue 3s ease;
+}
+
+@keyframes moveDownOnContinue {
+    0% {
+        width: 3%;
+        height: 5%;
+        top: 57%;
+        left: 75%;
+    }
+    50% {
+        width: 5%;
+        height: 10%;
+        top: 80%;
+        left: 78%;
+    }
+    100% {
+        width: 10%;
+        height: 20%;
+        top: 77%;
+        left: 85%;
+    }
+}
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 15%;
+    border-radius: 20px;
+}
